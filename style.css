@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #7f7e7f;
+
+}
+.tower {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 30%;
+    margin: 50px auto;
+    gap: 5px;
+}
+
+/* Each hour layer */
+.hour {
+
+    height: 30px;
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; 
+    border: 1.5px solid #333;
+    border-radius: 15px;
+    background-color: #c1c1c1;
+    transition: background-color 0.5s ease;
+}
+
+/* Active hour styling with gradient */
+.active {
+    background: linear-gradient(to right, #6b27af var(--hour-fill, 0%), #c1c1c1 0%);
+    font-size: 20px;
+    font-weight: 1000;
+    color: rgb(126, 159, 159);
+}
+
+/* Passed hour styling */
+.passed {
+    background-color: #6b27af;
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 1000;
+
+}
